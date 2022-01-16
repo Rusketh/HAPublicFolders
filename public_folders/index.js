@@ -11,7 +11,7 @@ for (let str in FOLDERS.split("\n"))
 	directories[split[1]] = split[2];
 }
 
-console.log(`Starting public folders service on ${port}`);
+console.log(`Starting public folders service on ${PORT}`);
 
 console.log(`Serving public folders:`, directories);
 
