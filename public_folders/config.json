@@ -1,7 +1,7 @@
 {
   "slug": "public_folders",
   "name": "Public Folders",
-  "version": "0.1.67",
+  "version": "0.1.68",
   "description": "Servers files on http.",
   "arch":
   [
@@ -21,4 +21,5 @@
   {
     "4123/tcp": "Public Folders"
   }
+
 }

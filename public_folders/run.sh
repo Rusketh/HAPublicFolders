@@ -1,7 +1,9 @@
 #!/usr/bin/with-contenv bashio
 
-PORT=$(bashio::addon.port 4123)
+set +u
 
-bashio::log.info "Starting public folders service on {port}"
+export PORT=$(bashio::addon.port 4123)
 
-npm run start PORT
+bashio::log.info "Starting bridge service."
+
+npm run start;
