@@ -27,9 +27,5 @@
     [
       "media:/media"
     ]
-  },
-  "schema":
-  {
-    "folders": "list"
   }
 }
