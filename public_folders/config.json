@@ -1,7 +1,7 @@
 {
   "slug": "public_folders",
   "name": "Public Folders",
-  "version": "0.2.01",
+  "version": "0.2.02",
   "description": "Server files on http.",
   "arch":
   [
@@ -24,12 +24,12 @@
   "options":
   {
     "folders":
-    {
-      "media": "/media"
-    }
+    [
+      "media:/media"
+    ]
   },
   "schema":
   {
-    "folders": "object"
+    "folders": "list"
   }
 }
