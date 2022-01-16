@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 
-define port
+declare port
 
 port=$(bashio::addon.port 4123)
 
