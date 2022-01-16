@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bashio
 
 
-PORT = $(bashio::config 'ports.8123/tcp')
+PORT = $(bashio::addon.port '8123')
 
 bashio::log.info "Starting public folders service on {PORT}"
 
