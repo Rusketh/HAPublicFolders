@@ -1,5 +1,5 @@
 #!/usr/bin/with-contenv bashio
 
-echo "Starting: Public Folders Addon"
+bashio::log.info "Starting public folders service."
 
-node index
+npm run start
