@@ -1,6 +1,6 @@
 {
     "name": "public_folders",
-    "version": "1.0.2",
+    "version": "0.1.4",
     "description": "Public Folders",
     "author": "Rusketh",
     "main": "index.js",
