@@ -8,7 +8,7 @@ const directories = { };
 for (let str in FOLDERS.split("\n"))
 {
 	let split = str.split(":");
-	directories[slpit[1]] = split[2];
+	directories[split[1]] = split[2];
 }
 
 console.log(`Starting public folders service on ${port}`);
