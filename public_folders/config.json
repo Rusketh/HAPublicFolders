@@ -1,8 +1,8 @@
 {
   "slug": "public_folders",
   "name": "Public Folders",
-  "version": "0.1.6",
-  "description": "Servers files on http (port 4123).",
+  "version": "0.1.61",
+  "description": "Servers files on http.",
   "arch":
   [
     "armhf",
