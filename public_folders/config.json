@@ -1,7 +1,7 @@
 {
   "slug": "public_folders",
   "name": "Public Folders",
-  "version": "0.2.03",
+  "version": "0.2.04",
   "description": "Server files on http.",
   "arch":
   [
