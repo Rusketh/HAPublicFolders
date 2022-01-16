@@ -45,8 +45,10 @@ const handler = (req, res) => {
 };
 
 //Create http server.
+console.log(`Starting HTTP server on port ${PORT}`);
+
 http.createServer(handler).listen(PORT, () => {
-	console.log(`Starting public folders service on ${PORT}`);
+	console.log(`HTTP server started.`);
 });
 
 

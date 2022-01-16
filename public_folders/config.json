@@ -1,7 +1,7 @@
 {
   "slug": "public_folders",
   "name": "Public Folders",
-  "version": "0.2.08",
+  "version": "0.2.09",
   "description": "Server files on http.",
   "arch":
   [
@@ -15,7 +15,7 @@
   "boot": "auto",
   "ports":
   {
-    "4123/tcp": 8080
+    "8080/tcp": 8080
   },
   "ports_description":
   {
