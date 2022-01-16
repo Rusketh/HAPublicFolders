@@ -33,9 +33,9 @@ const handler = (req, res) => {
 	let base = directories[location];
 	if (!base) return error(req, res, 404);
 
-	let path = path.join(location, ...parts);
+	let filepath = path.join(location, ...parts);
 
-    fs.readFile(path, (err, data) => {
+    fs.readFile(filepath, (err, data) => {
         if (err && err.code == 'ENOENT') return error(req, res, 404)
   		if (err) return error(req, res, 404);
        
