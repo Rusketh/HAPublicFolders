@@ -1,0 +1,28 @@
+{
+  "slug": "public_folders",
+  "name": "Public Folders",
+  "version": "0.1.0",
+  "description": "Servers files on http (port 4123).",
+  "arch":
+  [
+    "armhf",
+    "armv7",
+    "aarch64",
+    "amd64",
+    "i386"
+  ],
+  "startup": "services",
+  "boot": "auto",
+  "ports":
+  {
+    "4123/tcp": 4123
+  },
+  "ports_description":
+  {
+    "4123/tcp": "Public Folders"
+  },
+  "folders":
+  {
+    "media": "/media"
+  }
+}
