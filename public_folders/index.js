@@ -5,10 +5,10 @@ const FOLDERS = process.env.FOLDERS;
 
 const directories = { };
 
-for (let str in FOLDERS.split("\n"))
+for (let str of FOLDERS.split("\n"))
 {
 	let split = str.split(":");
-	directories[split[1]] = split[2];
+	directories[split[0]] = split[1];
 }
 
 console.log(`Starting public folders service on ${PORT}`);
