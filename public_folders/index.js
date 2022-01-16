@@ -25,7 +25,7 @@ const error = (req, res, code) => {
 //Handler:
 const handler = (req, res) => {
 	
-	let parts = path.sep(request.url).shift();
+	let parts = path.sep(req.url).shift();
 
 	let location = parts[0];
 	if (!location) return error(req, res, 404);
