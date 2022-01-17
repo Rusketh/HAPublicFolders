@@ -27,7 +27,7 @@ const handler = (req, res) => {
 	
 	console.log("URL:", req.url);
 
-	let parts = req.url.split(path.sep).shift();
+	let parts = req.url.split("/").shift();
 
 	console.log("PARTS:", parts);
 
