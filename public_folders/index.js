@@ -18,7 +18,7 @@ for (let str of FOLDERS.split("\n"))
 
 //Error Handler
 const error = (req, res, code) => {
-	res.writeHead(200);
+	//res.writeHead(200);
     res.end(code, 'utf-8');
 };
 
@@ -39,7 +39,7 @@ const handler = (req, res) => {
         if (err && err.code == 'ENOENT') return error(req, res, 404)
   		if (err) return error(req, res, 404);
        
-        res.writeHead(200);
+        //res.writeHead(200);
         res.end(content, 'utf-8');
     });
 };
