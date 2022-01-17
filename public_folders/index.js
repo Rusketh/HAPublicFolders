@@ -25,7 +25,7 @@ const error = (req, res, code) => {
 //Handler:
 const handler = (req, res) => {
 	
-	console.log("URL": req.url);
+	console.log("URL:", req.url);
 
 	let parts = req.url.split(path.sep).shift();
 
