@@ -25,19 +25,26 @@ const error = (req, res, code) => {
 //Handler:
 const handler = (req, res) => {
 	
+	console.log("URL": req.url);
+
 	let parts = req.url.split(path.sep).shift();
 
 	let location = parts[0];
 	if (!location) return error(req, res, "404");
+	console.log("LOCATION:", location);
 
 	let base = directories[location];
 	if (!base) return error(req, res, "404");
 
+	console.log("BASE:", base);
+
 	let filepath = path.join(location, ...parts);
+
+	console.log("FILE:", file);
 
     fs.readFile(filepath, (err, data) => {
         if (err && err.code == 'ENOENT') return error(req, res, "404")
-  		if (err) return error(req, res, "404");
+  		if (err) return error(req, res, "401");
        
         res.writeHead(200);
         res.end(content, 'utf-8');
