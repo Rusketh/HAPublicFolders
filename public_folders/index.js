@@ -28,10 +28,11 @@ const handler = (req, res) => {
 	console.log("URL:", req.url);
 
 	let parts = req.url.split("/");
+	if (parts[0] == "") parts.shift();
 
 	console.log("PARTS:", parts);
 
-	let location = parts[0];
+	let location = parts.shift();
 	if (!location) return error(req, res, "404");
 	console.log("LOCATION:", location);
 
