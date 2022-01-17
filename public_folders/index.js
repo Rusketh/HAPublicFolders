@@ -29,6 +29,8 @@ const handler = (req, res) => {
 
 	let parts = req.url.split(path.sep).shift();
 
+	console.log("PARTS:", parts);
+
 	let location = parts[0];
 	if (!location) return error(req, res, "404");
 	console.log("LOCATION:", location);
