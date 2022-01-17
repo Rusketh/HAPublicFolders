@@ -18,7 +18,7 @@ for (let str of FOLDERS.split("\n"))
 
 //Error Handler
 const error = (req, res, code) => {
-	//res.writeHead(200);
+	res.writeHead(200);
     res.end(code, 'utf-8');
 };
 
@@ -28,18 +28,18 @@ const handler = (req, res) => {
 	let parts = req.url.split(path.sep).shift();
 
 	let location = parts[0];
-	if (!location) return error(req, res, 404);
+	if (!location) return error(req, res, "404");
 
 	let base = directories[location];
-	if (!base) return error(req, res, 404);
+	if (!base) return error(req, res, "404");
 
 	let filepath = path.join(location, ...parts);
 
     fs.readFile(filepath, (err, data) => {
-        if (err && err.code == 'ENOENT') return error(req, res, 404)
-  		if (err) return error(req, res, 404);
+        if (err && err.code == 'ENOENT') return error(req, res, "404")
+  		if (err) return error(req, res, "404");
        
-        //res.writeHead(200);
+        res.writeHead(200);
         res.end(content, 'utf-8');
     });
 };
