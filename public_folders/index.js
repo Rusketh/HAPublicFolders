@@ -43,7 +43,7 @@ const handler = (req, res) => {
   		if (err) return error(req, res, "401");
        
         res.writeHead(200);
-        res.end(content, 'utf-8');
+        res.end(data, 'utf-8');
     });
 };
 
