@@ -15,7 +15,7 @@
   "boot": "auto",
   "map":
   [
-    "media:r"
+    "media:ro"
   ],
   "ports":
   {
