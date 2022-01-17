@@ -43,7 +43,7 @@ const handler = (req, res) => {
 
 	let filepath = path.join(location, ...parts);
 
-	console.log("FILE:", file);
+	console.log("FILE:", filepath);
 
     fs.readFile(filepath, (err, data) => {
         if (err && err.code == 'ENOENT') return error(req, res, "404")
