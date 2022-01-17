@@ -30,20 +30,13 @@ const handler = (req, res) => {
 	let parts = req.url.split("/");
 	if (parts[0] == "") parts.shift();
 
-	console.log("PARTS:", parts);
-
 	let location = parts.shift();
 	if (!location) return error(req, res, "404");
-	console.log("LOCATION:", location);
 
 	let base = directories[location];
 	if (!base) return error(req, res, "404");
 
-	console.log("BASE:", base);
-
 	let filepath = path.join(location, ...parts);
-
-	console.log("FILE:", filepath);
 
     fs.readFile(filepath, (err, data) => {
         if (err && err.code == 'ENOENT') return error(req, res, "404")
