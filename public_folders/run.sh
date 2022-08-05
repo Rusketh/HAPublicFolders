@@ -7,4 +7,4 @@ export FOLDERS=$(bashio::config "folders")
 
 bashio::log.info "Starting http service on."
 
-npm run start;
+exec npm run start;
