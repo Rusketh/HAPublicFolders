@@ -7,4 +7,5 @@ RUN \
     nodejs npm
 
 #Copy node file
-COPY rootfs /
+COPY package.json /
+COPY index.js /
