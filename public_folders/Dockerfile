@@ -7,11 +7,7 @@ RUN \
     nodejs npm
 
 #Copy node file
-COPY package.json /
-COPY index.js /
+COPY rootfs /
 
 # Copy run file
-COPY run.sh /
-RUN chmod a+x /run.sh
-
-CMD [ "/run.sh" ]
+RUN chmod a+x rootfs/etc/services/public_folers/run.sh
