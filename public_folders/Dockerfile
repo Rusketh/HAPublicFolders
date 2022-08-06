@@ -8,6 +8,3 @@ RUN \
 
 #Copy node file
 COPY rootfs /
-
-# Copy run file
-RUN chmod a+x rootfs/etc/services/public_folers/run.sh
