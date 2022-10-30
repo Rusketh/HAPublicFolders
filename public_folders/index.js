@@ -8,7 +8,7 @@ const PORT = process.env.PORT;
 const FOLDERS = process.env.FOLDERS;
 
 //Load Config:
-const config = fs.readFileSync("/data/options.json");
+const config = require("/data/options.json");
 
 const LISTDIRS = config.directory_listing;
 const LOGGING = config.request_logging;
