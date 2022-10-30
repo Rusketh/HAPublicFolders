@@ -9,10 +9,14 @@ const FOLDERS = process.env.FOLDERS;
 const LISTDIRS = process.env.DIRECTORY_LISTING;
 const LOGGING = process.env.REQUEST_LOGGING;
 
+console.log("Dumping Enivroment Vars:");
+console.log(process.env);
+console.log("--------------------------------------------------");
+
 //List settings
 console.log(`Setting Request Logging: ${LOGGING ? "on" : "off"}.`);
 console.log(`Setting Directory Listing: ${LISTDIRS ? "on" : "off"}.`);
-console.log(process.env);
+
 
 //Directory Mappings
 const directories = { };
