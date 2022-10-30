@@ -14,6 +14,7 @@ for (let str of FOLDERS.split("\n"))
 {
 	let split = str.split(":");
 	directories[split[0]] = split[1];
+	console.log(`Serving ${split[1]} on ${split[0]}`);
 }
 
 //Error Handler
