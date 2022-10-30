@@ -12,6 +12,7 @@ const LOGGING = process.env.REQUEST_LOGGING;
 //List settings
 console.log(`Setting Request Logging: ${LOGGING ? "on" : "off"}.`);
 console.log(`Setting Directory Listing: ${LISTDIRS ? "on" : "off"}.`);
+console.log(process.env);
 
 //Directory Mappings
 const directories = { };
