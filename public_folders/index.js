@@ -13,6 +13,11 @@ const config = fs.readFileSync("/data/options.json");
 const LISTDIRS = config.directory_listing;
 const LOGGING = config.request_logging;
 
+console.log("Dumping Config:");
+console.log(config);
+console.log("--------------------------------------------------");
+
+
 //List settings
 console.log(`Setting Request Logging: ${LOGGING ? "on" : "off"}.`);
 console.log(`Setting Directory Listing: ${LISTDIRS ? "on" : "off"}.`);
