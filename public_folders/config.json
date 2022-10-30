@@ -32,7 +32,8 @@
     [
       "media:/media"
     ],
-    "directorylisting": false
+    "directory_listing": false,
+    "request_logging": false
   },
   "schema":
   {
@@ -40,6 +41,7 @@
     [
       "str"
     ],
-    "directorylisting": "bool"
+    "directory_listing": "bool",
+    "request_logging": "bool"
   }
 }
