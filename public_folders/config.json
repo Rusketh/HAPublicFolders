@@ -31,13 +31,15 @@
     "folders":
     [
       "media:/media"
-    ]
+    ],
+    "directorylisting": false
   },
   "schema":
   {
     "folders":
     [
       "str"
-    ]
+    ],
+    "directorylisting": "bool"
   }
 }
