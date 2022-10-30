@@ -6,12 +6,12 @@ const path = require('path');
 //Config
 const PORT = process.env.PORT;
 const FOLDERS = process.env.FOLDERS;
-const LISTDIRS = process.env.DIRECTORY_LISTING;
-const LOGGING = process.env.REQUEST_LOGGING;
 
-console.log("Dumping Enivroment Vars:");
-console.log(process.env);
-console.log("--------------------------------------------------");
+//Load Config:
+const config = fs.readFileSync("/data/options.json");
+
+const LISTDIRS = config.directory_listing;
+const LOGGING = config.request_logging;
 
 //List settings
 console.log(`Setting Request Logging: ${LOGGING ? "on" : "off"}.`);
